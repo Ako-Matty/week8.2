@@ -10,7 +10,7 @@ const addAuthor = async (req, res) => {
 
         const author = await Author.create(req.body);
 
-        // const author = {authorName: req.body.authorName} another wway.....
+        // const author = {authorName: req.body.authorName} another way.....
         // const newAuthor = await Author.create
 
         res.status(201).json({ message: "success", newBook: author });

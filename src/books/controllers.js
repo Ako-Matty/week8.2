@@ -1,5 +1,8 @@
 const Book = require("./model");
 
+
+
+
 const addBook = async (req, res) => {
     try {
         // const book = await Book.create({
@@ -98,6 +101,8 @@ const updatebooks = async (req, res) => {
 
 
 
+
+
 const deletebook = async (req, res) => {
     try {
         const result = await Book.destroy({ where: { title: req.body.title } });
@@ -128,5 +133,4 @@ module.exports = {
     deleteAllbooks,
     getSingleBookbyTitle,
     
-
 };
